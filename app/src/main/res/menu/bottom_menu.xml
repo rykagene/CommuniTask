@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        />
+
+
+    <item
+    android:id="@+id/homeFindJob"
+    android:title="Find Job"
+    android:icon="@drawable/baseline_home_repair_service_24"
+    />
+
+
+
+    <item
+        android:id="@+id/homeMessage"
+        android:title="Message"
+        android:icon="@drawable/baseline_message_24"
+        />
+
+    <item
+        android:id="@+id/homeNotif"
+        android:title="Notification"
+        android:icon="@drawable/baseline_notifications_24"
+        />
+
+    <item
+        android:id="@+id/homeProfile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"
+        />
+
+
+
+
+</menu>

@@ -2,7 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.CommuniTask" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/meconium</item>
+        <item name="colorSecondary">@color/meconium</item>
     </style>
 
     <style name="Theme.CommuniTask" parent="Base.Theme.CommuniTask" />
