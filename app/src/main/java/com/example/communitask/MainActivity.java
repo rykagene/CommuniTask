@@ -22,20 +22,19 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        replaceFragment(new tab1());
+        replaceFragment(new tab2());
         binding.bottomNavigationView.setBackground(null);
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
-            if (item.getItemId() == R.id.home ){
-                replaceFragment(new tab1());
-                return true;
-            } else if (item.getItemId() == R.id.homeFindJob) {
-                replaceFragment(new tab2());
-                return true;
-            } else if (item.getItemId() == R.id.homeMessage) {
-                replaceFragment(new tab3());
-                return true;
-            } else if (item.getItemId() == R.id.homeNotif) {
+//            if (item.getItemId() == R.id.home ){
+//                replaceFragment(new tab1());
+//                return true;
+//            }
+             if (item.getItemId() == R.id.home) {
+                 replaceFragment(new tab2());
+                 return true;
+             }
+             else if (item.getItemId() == R.id.homeNotif) {
                 replaceFragment(new tab4());
                 return true;
             } else if (item.getItemId() == R.id.homeProfile) {

@@ -3,13 +3,266 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#F5F5F5"
     tools:context=".tab2">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="tab2" />
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#F5F5F5"
+            android:layout_margin="24dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="312dp"
+                android:layout_height="50dp"
+                android:background="#EEEEEF"
+                android:gravity="center"
+                android:hint="Search keywords" />
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:tabGravity="fill"
+            app:tabMode="fixed">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hire Someone" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Someone" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <LinearLayout
+            android:id="@+id/tab1_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="24dp"
+            android:orientation="vertical"
+            >
+
+            <!-- Content for the first tab (Hire Someone) goes here -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="I'm Looking For"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="2"
+                android:rowCount="6">
+
+                <!-- Card 1 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="160dp"
+                    android:layout_height="136dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/content1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mechanic"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mechanic"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Card 2 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="160dp"
+                    android:layout_height="136dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/content2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/housekeeper"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Housekeeper"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Card 3 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="160dp"
+                    android:layout_height="136dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/content3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gardener"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gardener"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Card 4 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="160dp"
+                    android:layout_height="136dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/content4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/coook"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cook"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Card 5 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="160dp"
+                    android:layout_height="136dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/content5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/tutor"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Home Tutor"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Card 6 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardView6"
+                    android:layout_width="160dp"
+                    android:layout_height="136dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/content6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gardener"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gardener"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tab2_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- Content for the second tab (Find Someone) goes here -->
+            <!-- Example content: -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content for Find Someone tab" />
+        </LinearLayout>
+
+    </LinearLayout>
 </FrameLayout>

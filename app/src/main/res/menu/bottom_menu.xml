@@ -3,28 +3,23 @@
 
     <item
         android:id="@+id/home"
-        android:title="Home"
-        android:icon="@drawable/baseline_home_24"
+        android:title="Find"
+        android:icon="@drawable/baseline_home_repair_service_24"
         />
 
-
-    <item
-    android:id="@+id/homeFindJob"
-    android:title="Find Job"
-    android:icon="@drawable/baseline_home_repair_service_24"
-    />
-
-
-
-    <item
-        android:id="@+id/homeMessage"
-        android:title="Message"
-        android:icon="@drawable/baseline_message_24"
-        />
-
+<!--    <item-->
+<!--        android:id="@+id/homeMessage"-->
+<!--        android:title="Chat"-->
+<!--        android:icon="@drawable/baseline_message_24"-->
+<!--        />-->
+<!--    <item-->
+<!--        android:id="@+id/homeFindJob"-->
+<!--        android:title="Find"-->
+<!--        android:icon="@drawable/baseline_home_repair_service_24"-->
+<!--        />-->
     <item
         android:id="@+id/homeNotif"
-        android:title="Notification"
+        android:title="Notifiations"
         android:icon="@drawable/baseline_notifications_24"
         />
 

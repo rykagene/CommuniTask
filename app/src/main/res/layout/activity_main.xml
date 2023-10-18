@@ -29,9 +29,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
-                android:background="@android:color/transparent"
+                app:backgroundTint="@color/white"
+                android:background="@android:color/white"
+                app:itemIconTint="@color/meconium"
                 app:labelVisibilityMode="labeled"
-                app:itemTextColor="@android:color/darker_gray"
+                app:itemTextColor="@color/meconium"
                 app:menu="@menu/bottom_menu" />
         </com.google.android.material.bottomappbar.BottomAppBar>
     </FrameLayout>
