@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/withName_Logo" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:layout_marginTop="10dp"
+            android:hint="Username"/>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:layout_marginTop="10dp"
+            android:hint=" Password"/>
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/confirm_btn"
+            android:text="LOGIN"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Not yet registered? Register now."
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Or login with"
+            android:textColor="#919191"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/facebook" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/google" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:src="@drawable/twitter" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</LinearLayout>
