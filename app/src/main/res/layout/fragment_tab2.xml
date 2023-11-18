@@ -25,7 +25,7 @@
             <EditText
                 android:layout_width="312dp"
                 android:layout_height="50dp"
-                android:background="#EEEEEF"
+                android:background="@drawable/rounded"
                 android:gravity="center"
                 android:hint="Search keywords" />
 

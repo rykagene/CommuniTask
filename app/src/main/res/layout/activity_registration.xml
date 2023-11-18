@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registration">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Create your account"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#919191" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/withName_Logo" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:layout_marginLeft="50dp"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Password"/>
+
+        <EditText
+            android:id="@+id/conf_password"
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Confirm Password"/>
+
+        <CheckBox
+            android:id="@+id/agreeCheckBox"
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#919191"
+        android:text="I agree to the terms and conditions of Communitask." />
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/confirm_btn"
+            android:text="Continue"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
