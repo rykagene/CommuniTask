@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Registration3_BackArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/arrow">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setup Account"
+            android:textSize="24dp"
+            android:textColor="#6EE6E2"
+            android:fontFamily="@font/inter_black"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let's start by setting up your account."
+            android:textColor="#2F455C"
+            android:textSize="14dp"
+            android:fontFamily="@font/inter_bold"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="3dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you currently..."
+            android:textSize="14dp"
+            android:textColor="#2F455C"
+            android:fontFamily="@font/inter_bold"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp">
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/Registration3_RG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/Registration3_RB1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Employed"
+                android:textColor="#B4B4B4"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginLeft="25dp">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/Registration3_RB2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unemployed"
+                android:textColor="#B4B4B4"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginLeft="25dp">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/Registration3_RB3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Self-employed"
+                android:textColor="#B4B4B4"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginLeft="25dp">
+            </RadioButton>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="Are you primarily looking for a job or looking to post job listings?"
+            android:textColor="#2F455C"
+            android:fontFamily="@font/inter_bold"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp">
+
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/Registration3_RG1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/Registration3_RB4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job Poster"
+                android:textColor="#B4B4B4"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginLeft="25dp">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/Registration3_RB5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job Seeker"
+                android:textColor="#B4B4B4"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginLeft="25dp">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/Registration3_RB6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Both"
+                android:textColor="#B4B4B4"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginLeft="25dp">
+            </RadioButton>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="100dp">
+
+
+        <Button
+            android:id="@+id/Registration3_BackButton"
+            android:layout_width="155dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:text="Back"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="14dp"
+            android:textColor="#41D9CB"
+            android:backgroundTint="#DFFFFF">
+
+        </Button>
+
+        <Button
+            android:id="@+id/Registration3_NextButton"
+            android:layout_width="155dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:text="Next"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#41D9CB">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

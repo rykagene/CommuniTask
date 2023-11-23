@@ -40,7 +40,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:src="@drawable/withName_Logo" />
+        android:src="@drawable/withname_logo" />
 
         <EditText
             android:id="@+id/email"
