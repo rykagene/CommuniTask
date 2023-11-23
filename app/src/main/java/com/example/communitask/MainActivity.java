@@ -13,6 +13,8 @@ import com.example.communitask.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     ActivityMainBinding binding;
 
 
