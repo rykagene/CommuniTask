@@ -1,10 +1,7 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.CommuniTask" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/meconium</item>
-        <item name="colorSecondary">@color/meconium</item>
-    </style>
 
-    <style name="Theme.CommuniTask" parent="Base.Theme.CommuniTask" />
+<resources>
+    <style name="Theme.CommuniTask" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+    </style>
 </resources>

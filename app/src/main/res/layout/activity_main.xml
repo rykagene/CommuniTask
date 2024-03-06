@@ -19,21 +19,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:background="@color/white"
-            app:fabCradleMargin="20dp"
-            app:fabCradleRoundedCornerRadius="25dp"
+
             tools:ignore="BottomAppBar">
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottomNavigationView"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
-                app:backgroundTint="@color/white"
-                android:background="@android:color/white"
-                app:itemIconTint="@color/meconium"
+
                 app:labelVisibilityMode="labeled"
-                app:itemTextColor="@color/meconium"
                 app:menu="@menu/bottom_menu" />
         </com.google.android.material.bottomappbar.BottomAppBar>
     </FrameLayout>
@@ -45,7 +40,7 @@
 <!--        android:layout_height="wrap_content"-->
 <!--        android:backgroundTint="@color/white"-->
 <!--        android:src="@drawable/baseline_search_24"-->
-<!--        android:tint="@color/meconium"-->
+<!--        android:tint="@color/primary"-->
 <!--        app:backgroundTint="@color/white"-->
 <!--        app:layout_anchor="@+id/frame_layout"-->
 <!--        app:layout_anchorGravity="center"-->

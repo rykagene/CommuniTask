@@ -2,4 +2,9 @@
     <string name="app_name">CommuniTask</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_1">Find</string>
+    <string name="menu_2">Updates</string>
+    <string name="menu_3">Profile</string>
+    <string name="Chats">Chats</string>
+    <string name="create">Create</string>
 </resources>

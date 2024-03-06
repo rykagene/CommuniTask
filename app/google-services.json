@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "391306562546",
+    "firebase_url": "https://communitask-a9293-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "communitask-a9293",
+    "storage_bucket": "communitask-a9293.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391306562546:android:86c830cfe6cbec7f3e396b",
+        "android_client_info": {
+          "package_name": "com.example.communitask"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF9qCHvJM8h2mYSLqz8jgNbcTyjEs2ydY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

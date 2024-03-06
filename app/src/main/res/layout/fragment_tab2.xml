@@ -8,28 +8,59 @@
     tools:context=".tab2">
 
     <LinearLayout
+        android:background="#f5f5f5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F5F5F5"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:background="#F5F5F5"
-            android:layout_margin="24dp"
-            android:layout_weight="1">
 
-            <EditText
-                android:layout_width="312dp"
-                android:layout_height="50dp"
-                android:background="@drawable/rounded"
-                android:gravity="center"
-                android:hint="Search keywords" />
+
+
+        <!-- Search Bar -->
+        <LinearLayout
+            android:id="@+id/material3Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <!-- Burger menu icon -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/round_menu_24"
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
+                android:contentDescription="Burger Menu"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="center_vertical" />
+
+            <!-- This is your existing search bar -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.search.SearchBar
+                    android:layout_marginStart="16dp"
+                    android:backgroundTint="#f5f5f5"
+                    android:id="@+id/textInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionSearch"
+
+                    android:inputType="text"
+                    android:hint="Try to find 'cook'"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
 
         </LinearLayout>
+
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
@@ -43,12 +74,12 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hire Someone" />
+                android:text="Find Tasker" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Find Someone" />
+                android:text="Find Task" />
 
         </com.google.android.material.tabs.TabLayout>
 
@@ -68,6 +99,8 @@
                 android:text="I'm Looking For"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -246,6 +279,8 @@
 
             </GridLayout>
 
+
+
         </LinearLayout>
 
 
@@ -254,15 +289,43 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:visibility="gone">
+            android:visibility="visible">
 
             <!-- Content for the second tab (Find Someone) goes here -->
             <!-- Example content: -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Content for Find Someone tab" />
-        </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Explore Tasks"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- RecyclerView to display posts -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view_posts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:clipToPadding="false"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:elevation="4dp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </LinearLayout>
+
 
     </LinearLayout>
 </FrameLayout>

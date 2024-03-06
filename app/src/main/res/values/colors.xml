@@ -2,8 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="meconium">#38D7C6</color>
-    <color name="meconiumLight">#8CEEF6</color>
+    <color name="transparent">#00E2B50C</color>
+    <color name="primary">#FF38D7C6</color>
+    <color name="secondary">#FF8CEEF6</color>
+
 
 
 </resources>

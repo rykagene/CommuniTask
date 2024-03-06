@@ -1,0 +1,154 @@
+<!-- post_item_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded"
+    android:padding="8dp"
+    android:layout_margin="8dp">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_bold"
+                />
+
+
+            <ImageButton
+                android:id="@+id/btn_upvote"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/rounded_bookmark_24"
+                android:contentDescription="upvote"
+                android:layout_gravity="right"
+                android:background="@color/white"
+                />
+        </FrameLayout>
+
+
+        <!-- Post Content -->
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_regular" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <!-- User Icon -->
+            <ImageView
+                android:id="@+id/image_user_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="user icon"/>
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="posted by"
+                tools:ignore="HardcodedText"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_regular"/>
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/text_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="username"
+                tools:ignore="HardcodedText"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_regular"/>
+
+            <!-- location -->
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_marginStart="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/round_location_on_24"/>
+
+            <!-- location -->
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/text_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Malolos"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- Action Buttons (Upvotes and Comments) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate"
+            android:fontFamily="@font/inter_regular"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/text_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Php 100"
+            android:textColor="@color/primary"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

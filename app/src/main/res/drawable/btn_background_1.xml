@@ -3,7 +3,7 @@
     <!-- Pressed state -->
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <solid android:color="@color/meconiumLight" />
+            <solid android:color="@color/white" />
             <corners android:radius="10dp" />
         </shape>
     </item>
